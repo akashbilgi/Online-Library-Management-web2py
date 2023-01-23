@@ -1,0 +1,42 @@
+{{extend 'layout.html'}}
+<body background="{{=URL('static','search6.jpg') }}">
+<h2>
+Search Student:
+</h2>
+    <b><font>{{=Search}}</font></b>
+    <b><font>{{=SearchName}}</font></b>
+    <h2>
+    Details
+</h2>
+<table class="table">
+     <td><b><font >UID</font></b></td>
+    <td><b><font >Name</font></b></td>
+    <td><b><font >Roll No</font></b></td>
+    <td><b><font >SEMESTER</font></b></td>
+    <td><b><font >Class</font></b></td>
+    <td><b><font >Phone number</font></b></td>
+
+    
+    {{for row in rows:}}
+    <tr>
+        <td><font ><b>{{=row.u_id}}</b></font></td>
+        <td><font >{{=row.F_name}}</font><br><font> <b>        {{=row.L_name}}</b></font></td>
+        <td><font >{{=row.Roll_no}}</font></td>
+        <td><font >{{=row.sem}}</font></td>
+        <td><font >{{=row.Class_}}</font></td>
+        <td><font >{{=row.l_phone_no}}</font></td>
+    </tr>
+    {{pass}}
+    
+    {{for row in rows1:}}
+    <tr>
+        <td><font ><b>{{=row.u_id}}</b></font></td>
+        <td><font >{{=row.F_name}}</font><br><font> <b>        {{=row.L_name}}</b></font></td>
+        <td><font >{{=row.Roll_no}}</font></td>
+        <td><font >{{=row.sem}}</font></td>
+        <td><font >{{=row.Class_}}</font></td>
+        <td><font >{{=row.l_phone_no}}</font></td>
+    </tr>
+    {{pass}}
+</table>
+</body>

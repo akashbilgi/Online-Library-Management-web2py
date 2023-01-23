@@ -1,0 +1,9 @@
+2016-04-05 15:55:04,430 - web2py - WARNING - email not sent
+----------------------------------------
+From: you@gmail.com
+To: akash.bilgi@gmail.com
+Subject: Password reset
+
+Click on the link http://127.0.0.1:8000/final4/default/user/reset_password?key=1459851904-0f18976c-0ae0-4b72-982e-922df85398f4 to reset your password
+----------------------------------------
+

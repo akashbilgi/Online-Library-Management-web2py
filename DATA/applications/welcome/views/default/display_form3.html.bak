@@ -1,0 +1,42 @@
+{{extend 'layout.html'}}
+<body  background="{{=URL('static','search6.jpg') }}">
+<h2>
+Search:
+</h2>
+    <b><font>{{=Search}}</font></b>
+    <b><font>{{=Return}}</font></b>
+    <h2>
+    Details
+</h2>
+<table class="table">
+     <td><b><font >U_id</font></b></td>
+    <td><b><font >Name</font></b></td>
+    <td><b><font >Roll No</font></b></td>
+    <td><b><font >PhoneNumber</font></b></td>
+   
+    
+    {{for row in Student:}}
+    <tr>
+        <td><font >{{=row.u_id}}</font></td>
+        <td><font >{{=row.F_name}}</font></td>
+        <td><font >{{=row.Roll_no}}</font></td>
+        <td><font >{{=row.l_phone_no}}</font></td>
+    </tr>
+    {{pass}}
+</table>
+<table class="table">
+     <td><b><font >Acc No</font></b></td>
+    <td><b><font >Issue date</font></b></td>
+    <td><b><font >Return date</font></b></td>
+    <td><b><font >Due date</font></b></td>
+    
+    {{for row in Books:}}
+    <tr>
+        <td><font >{{=row.Acc_no}}</font></td>
+        <td><font >{{=row.Issue_date}}</font></td>
+        <td><font >{{=row.Return_date}}</font></td>
+        <td><font >{{=row.Due_date}}</font></td>
+    </tr>
+    {{pass}}
+    </table>
+</body>

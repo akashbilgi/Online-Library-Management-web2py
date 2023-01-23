@@ -1,0 +1,9 @@
+1.Click on 'deploy' to start.
+
+2.You'll be prompted with "Start server" dialogue box.
+
+3.Choose a password (Ex:12345) (You can hit start without choosing password. But You'll be ddeprived of admin access).
+
+4.Click "start  server". Wait for browser to start up.
+
+5.USE username: 'akash' , password: '12345' [ without quotes] for faculty login, once the app has been started. 

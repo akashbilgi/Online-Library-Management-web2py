@@ -1,0 +1,43 @@
+{{extend 'layout.html'}}
+<body background="{{=URL('static','search6.jpg') }}">
+<h2>
+Search by Name:
+</h2>
+    <b><font>{{=Search}}</font></b>
+    <h2>
+    Details
+</h2>
+<table class="table">
+    <td><b><font >Acc No</font></b></td>
+    <td><b><font >Title</font></b></td>
+    <td><b><font >Author</font></b></td>
+    <td><b><font >Date</font></b></td>
+    <td><b><font >Publisher</font></b></td>
+    <td><b><font >Edition</font></b></td>
+    <td><b><font >Cost</font></b></td>
+    <td><b><font >Page</font></b></td>
+    <td><b><font >Bill</font></b></td>
+    <td><b><font >Call No</font></b></td>
+    <td><b><font >ISBN</font></b></td>
+    <td><b><font >Subject</font></b></td>
+    
+    {{for row in Books:}}
+    <tr>
+        <td><font >{{=row.Book_id}}</font>
+        <td><font >{{=row.Title}}</font></td>
+        <td><font >{{=row.Author}}</font></td>
+        <td><font >{{=row.Date_}}</font>
+        <td><font >{{=row.publisher}}</font></td>
+        <td><font >{{=row.Edition}}</font></td>
+        <td><font >{{=row.cost_}}</font></td>
+        <td><font >{{=row.page_}}</font></td>
+        
+        <td><font >{{=row.Bill_no}}</font></td>
+        <td><font >{{=row.call_no}}</font></td>
+        <td><font >{{=row.ISBN}}</font></td>
+        <td><font >{{=row.Subject}}</font></td>
+    </tr>
+    {{pass}}
+</table>
+
+</body>

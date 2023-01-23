@@ -1,0 +1,125 @@
+{{extend 'layout.html'}}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>CDC Online form</title>
+<meta charset="iso-8859-1">
+<link rel="stylesheet" href="{{=URL('static','styles/layout.css')}}" type="text/css">
+<!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+<div class="wrapper row1">
+  <header id="header" class="clear">
+    <div id="hgroup">
+      <h1><a href="#"></a></h1>
+      <h2></h2>
+    </div>
+    <form action="#" method="post">
+      <fieldset>
+      </fieldset>
+    </form>
+    <!--<nav>
+      <ul>
+         <li><a href="{{=URL('default','updatebooks.html')}}">Add Books</a></li>
+        <li><a href="{{=URL('default','updatestudent.html')}}">Add Student</a></li>
+        <li><a href="{{=URL('default','updatesubjecttaken.html')}}">Add Subject Taken</a></li>
+           <li><a href="{{=URL('default','updateSubject.html')}}">Add Subject</a></li>
+        <li class="last"><a href="{{=URL('default','createISSUE.html')}}">Book Issue</a></li>
+      </ul>
+    </nav>-->
+  </header>
+</div>
+<!-- content -->
+<div class="wrapper row2">
+  <div id="container" class="clear">
+      <h1></h1>
+    <!-- main content -->
+    <div id="intro">
+      <section class="clear">
+        <!-- article 1 -->
+        <article class="two_quarter">
+            <ul><font colour='black' size=6>Register:</font><br><br>
+                <li><a href="{{=URL('default','createBooks.html')}}"><font size=5 color=blue><i>New Books</i></font></a></li><br><br>
+                <li><a href="{{=URL('default','createstudent.html')}}"><font size=5 color=blue><i>New Student</i></font></a></li><br><br>
+                <li><a href="{{=URL('default','createSub_taken.html')}}"><font size=5 color=blue><i>Add Subject Taken</i></font></a></li><br><br>
+                <li><a href="{{=URL('default','createSubject.html')}}"><font size=5 color=blue><i>New Subject</i></font></a></li><br><br>
+        <!--<li class="last"><a href="{{=URL('default','createISSUE.html')}}"><font size=5 color=blue><i>Book Issue</a></li>-->
+      </ul>
+           
+        </article>
+
+          
+        <!-- article 1 -->
+        <article class="two_quarter lastbox">
+            <ul><font colour='black' size=6>Search:</font><br><br>
+           <!-- <li><a href="{{=URL('appadmin','index.html') }}">Database</a></li>-->
+                <li><a href="{{=URL('default','display_books.html')}}"><font size=5 color=#64FE2E><i>Search Books</i></font></a></li><br><br>
+                <li><a href="{{=URL('default','display_form2.html')}}"><font size=5 color=#64FE2E><i>Search Student</i></font></a></li><br><br>
+                <li><a href="{{=URL('default','display_form3.html')}}"><font size=5 color=#64FE2E><i>Search/Return Book Issue</i></font></a></li><br><br>
+                <li><a href="{{=URL('default','createISSUE.html')}}"><font size=5 color=#64FE2E><i>Issue New Book</i></font></a></li><br><br>
+            </ul>
+        </article>
+          
+        <!-- article 2 -->
+        <article class="two_quarter lastbox">
+             <ul><font colour='black' size=6>Update:</font><br><br>
+           <!-- <li><a href="{{=URL('appadmin','index.html') }}">Database</a></li>-->
+                <li><a href="{{=URL('default','updatebooks.html')}}"><font size=5 color=#FF8000><i>Update Books</i></font></a></li><br><br>
+                <li><a href="{{=URL('default','updatestudent.html')}}"><font size=5 color=#FF8000><i>Update Student</i></font></a></li><br><br>
+                <li><a href="{{=URL('default','updatesubjecttaken.html')}}"><font size=5 color=#FF8000><i>Update Subject taken</i></font></a></li><br><br>
+                <li><a href="{{=URL('default','updateSubject.html')}}"><font size=5 color=#FF8000><i>Update Subjects</i></font></a></li><br><br>
+                <li><a href="{{=URL('default','updateissue.html')}}"><font size=5 color=#FF8000><i>Update Book Issue</i></font></a></li><br><br>
+            </ul>
+        </article>
+      </section>
+    </div>
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+    <!-- ########################################################################################## -->
+    <div id="homepage" class="last clear">
+      <section class="one_quarter">
+        <h2 class="title"></h2>
+        <!--<article>
+          <header>
+            <h2>DBMS DEMO</h2>
+            <address>
+            <a href="#">Akash, Amrutha, Ankita,Abhijit</a>, example.com
+            </address>
+            <time datetime="2016-03-14">Monday, 14<sup>th</sup> March 2016</time>
+          </header>
+          <p>-----------</p>
+          <footer class="more"><a href="#">Read More &raquo;</a></footer>-->
+        </article>
+      </section>
+      <section class="one_quarter">
+        <h2 class="title"></h2>
+        <!--<nav>
+          <ul>
+           <!-- <li><a href="{{=URL('appadmin','index.html') }}">Database</a></li>
+            <li><a href="{{=URL('default','display_books.html')}}">Search Books</a></li>
+            <li><a href="{{=URL('default','display_form.html')}}">Search by name</a></li>
+            <li><a href="{{=URL('default','display_form2.html')}}">Search by UID</a></li>
+            <li><a href="{{=URL('default','display_form3.html')}}">Book Issue</a></li>
+            <li class="last"><a href="#">-------</a></li>
+          </ul>
+        </nav>-->
+      </section>
+      <section class="two_quarter lastbox">
+        <h2 class="title"></h2>
+      
+      </section>
+    </div>
+    <!-- / content body -->
+  </div>
+</div>
+    <div align="center"><a href="http://www.simplehitcounter.com" target="_blank"><img src="http://simplehitcounter.com/hit.php?uid=2042313&f=16777215&b=0" border="0" height="18" width="83" alt="web counter"></a><br><p>People Visited</p></div>
+<!-- Footer -->
+<div class="wrapper row3">
+  <footer id="footer" class="clear">
+    <p class="fl_left">Copyright &copy; 2016 - All Rights Reserved - <a href="#">BVBCET</a></p>
+  </footer>
+</div>
+
+</body>
+</html>
